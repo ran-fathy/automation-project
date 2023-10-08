@@ -1,6 +1,6 @@
 import { Locator, Page } from '@playwright/test';
 
-export default class capturePatientPage{
+export  class capturePatientPage{
     readonly page: Page;
     readonly activateSearchBar: Locator;
     readonly searchBarInput: Locator;
