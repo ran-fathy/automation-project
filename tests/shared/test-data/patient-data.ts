@@ -1,3 +1,3 @@
 export class PatientData {
-    SearchKeyWord: string = 'Esraaa Saeed A A';
+    SearchKeyWord: string = '00300694ALX';
 }
