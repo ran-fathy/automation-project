@@ -48,6 +48,11 @@ export class treatmentplan{
         await this.selectedtreatmentplan.click();
         await this.startbtn.click();
         await this.savebtn.isVisible();
+        this.page.on('dialog', async dialog => {
+            await expect  (dialog.message()).toContain('Treatmen plan has been stopped successfully!');
+            
+            await dialog.dismiss();
+          });
         await this.savebtn.click();
    
     }
